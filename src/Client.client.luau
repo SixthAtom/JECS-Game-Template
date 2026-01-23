@@ -37,18 +37,18 @@ do
 	end
 
 	-- Run .init
-	for _, module in next, modules do
-		if module.init then
-			module.init()
-			module.init = nil
+	for _, m in next, modules do
+		if m.Module.init then
+			m.Module.init()
+			m.Module.init = nil
 		end
 	end
 
 	-- Run start
-	for _, module in next, modules do
-		if module.start then
-			task.spawn(module.start)
-			module.start = nil
+	for _, m in next, modules do
+		if m.Module.start then
+			task.spawn(m.Module.start)
+			m.Module.start = nil
 		end
 	end
 
