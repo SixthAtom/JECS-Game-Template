@@ -1,0 +1,28 @@
+{
+  "editor.semanticHighlighting.enabled": true,
+  "editor.formatOnSave": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+
+  "luau-lsp.completion.autocompleteEnd": true,
+  "luau-lsp.fflags.enableNewSolver": true,
+  "luau-lsp.hover.showTableKinds": true,
+  "luau-lsp.plugin.maximumRequestBodySize": "50mb",
+  "luau-lsp.plugin.enabled": true,
+  "luau-lsp.completion.imports.enabled": true,
+  "luau-lsp.sourcemap.rojoProjectFile": "default.project.json",
+
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[lua]": {
+    "editor.defaultFormatter": "JohnnyMorganz.stylua"
+  },
+  "[luau]": {
+    "editor.defaultFormatter": "JohnnyMorganz.stylua"
+  },
+  "search.exclude": {
+    "Packages/**": true,
+    "ServerPackages/**": true
+  },
+  "stylua.targetReleaseVersion": "latest"
+}

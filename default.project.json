@@ -1,0 +1,44 @@
+{
+  "name": "JECS-Game-Template",
+  "tree": {
+    "$className": "DataModel",
+
+    "ReplicatedStorage": {
+      "Shared": {
+        "$path": "src/Shared",
+
+        "Packages": {
+          "$path": "Packages"
+        }
+      },
+
+      "Client": {
+        "$path": "src/Client"
+      }
+    },
+
+    "ServerStorage": {
+      "Server": {
+        "$path": "src/Server",
+
+        "Packages": {
+          "$path": "ServerPackages"
+        }
+      }
+    },
+
+    "ServerScriptService": {
+      "Server": {
+        "$path": "src/Server.server.luau"
+      }
+    },
+
+    "StarterPlayer": {
+      "StarterPlayerScripts": {
+        "Client": {
+          "$path": "src/Client.client.luau"
+        }
+      }
+    }
+  }
+}
