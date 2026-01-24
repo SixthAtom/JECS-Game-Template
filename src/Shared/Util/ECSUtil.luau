@@ -1,15 +1,24 @@
+local ECSUtil = {}
+
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
-local Worlds = require(ReplicatedStorage.Shared.ECS.Worlds)
+local jecs = require(ReplicatedStorage.Shared.Packages.jecs)
 
 -------------------------------------------------------------------------------
--- CONSTANTS
+-- TYPES
 -------------------------------------------------------------------------------
 
-local WORLD = Worlds.Default
+type World = jecs.World
+type Entity<T = nil> = jecs.Entity<T>
 
 -------------------------------------------------------------------------------
--- RETURN
+-- PUBLIC FUNCTIONS
 -------------------------------------------------------------------------------
 
-return {}
+function ECSUtil.bulkSet<E, C>(world: World, entity: E, components: C)
+	for i, v in components :: { [Entity<any>]: any } do
+		world:set(entity, i, v)
+	end
+end
+
+return ECSUtil

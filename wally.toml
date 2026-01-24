@@ -6,8 +6,4 @@ realm = "shared"
 authors = ["SixthAtom / Lars B."]
 
 [dependencies]
-cmdr = "evaera/cmdr@1.12.0"
 jecs = "ukendio/jecs@0.9.0"
-
-[server-dependencies]
-profilestore = "lm-loleris/profilestore@1.0.3"

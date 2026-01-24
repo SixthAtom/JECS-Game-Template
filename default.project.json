@@ -19,11 +19,7 @@
 
     "ServerStorage": {
       "Server": {
-        "$path": "src/Server",
-
-        "Packages": {
-          "$path": "ServerPackages"
-        }
+        "$path": "src/Server"
       }
     },
 

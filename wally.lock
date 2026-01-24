@@ -3,19 +3,9 @@
 registry = "test"
 
 [[package]]
-name = "evaera/cmdr"
-version = "1.12.0"
-dependencies = []
-
-[[package]]
 name = "larsb/jecs-game-template"
-version = "0.1.0"
-dependencies = [["cmdr", "evaera/cmdr@1.12.0"], ["jecs", "ukendio/jecs@0.9.0"], ["profilestore", "lm-loleris/profilestore@1.0.3"]]
-
-[[package]]
-name = "lm-loleris/profilestore"
-version = "1.0.3"
-dependencies = []
+version = "1.0.0"
+dependencies = [["jecs", "ukendio/jecs@0.9.0"]]
 
 [[package]]
 name = "ukendio/jecs"
