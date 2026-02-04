@@ -21,6 +21,7 @@ do
 	local start = os.clock()
 
 	-- Load ECS
+	require(ReplicatedStorage.Shared.ECS.Tags)
 	require(ReplicatedStorage.Shared.ECS.Worlds)
 	for _, parent in { ReplicatedStorage.Shared.ECS.Components, ServerStorage.Server.ECS.Components } do
 		for _, child: ModuleScript in parent:GetChildren() do

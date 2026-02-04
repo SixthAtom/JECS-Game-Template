@@ -20,10 +20,6 @@ type Id<T = nil> = jecs.Id<T>
 -------------------------------------------------------------------------------
 
 return {
-	-- Tags
-	PlotTag = jecs.tag(),
-
-	-- Globals
 	Name = WORLD:component() :: Id<string>,
 	Id = WORLD:component() :: Id<number>,
 	OwnerId = WORLD:component() :: Id<number>,
